@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment Solution for Module 2</title>
+    <style>
+      /********** Base styles **********/
+      * {
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-family: Helvetica;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-family: Helvetica;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .chicken {
+        background-color: #e48282;
+        font-family: Helvetica;
+        font-size: 21px;
+        float: right;
+        width: 100px;
+        color: black;
+        text-align: center;
+      }
+
+      .beef {
+        background-color: #701616;
+        font-family: Helvetica;
+        font-size: 21px;
+        float: right;
+        width: 100px;
+        color: white;
+        text-align: center;
+      }
+
+      .sushi {
+        background-color: #cecc76;
+        font-family: Helvetica;
+        font-size: 21px;
+        float: right;
+        width: 100px;
+        color: black;
+        text-align: center;
+      }
+
+      .menu-desc {
+        float: right;
+        width: 100%;
+      }
+
+      /* Simple Responsive Framework. */
+      .row {
+        width: 100%;
+      }
+
+      .section {
+        width: 100%;
+        height: 100px;
+        float: left;
+        border: 1px solid black;
+        background-color: darkgrey;
+        margin: 10px 0;
+      }
+
+      /********** Large devices only **********/
+      @media (min-width: 992px) {
+        .col-lg-4 {
+          width: 32.8%;
+          height: 180px;
+        }
+        .col-lg-4:not(:last-of-type) {
+          margin-right: 0.8%;
+        }
+      }
+
+      /********** Medium devices only **********/
+      @media (min-width: 768px) and (max-width: 991px) {
+        .col-md-6 {
+          width: 49.5%;
+          height: 150px;
+        }
+        .col-md-6:first-of-type {
+          margin-right: 1%;
+        }
+        .col-md-12 {
+          width: 100%;
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Our menu</h1>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 section">
+        <span class="chicken"> Chicken </span>
+        <span class="menu-desc">
+          <p>
+            talk about chicken talk about chicken talk about chicken talk talk
+            about chicken talk about chicken talk about chicken talktalk about
+            chicken talk about chicken
+          </p>
+        </span>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 section">
+        <span class="beef"> Beef </span>
+        <span class="menu-desc">
+          <p>
+            beef talk beef talk beef talk beef talk beef talk beef talk beef
+            talk beef talk beef talk beef talk beef talk beef talk beef talk
+            beef talk beef talk beef talk
+          </p>
+        </span>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 section">
+        <span class="sushi"> Sushi </span>
+        <span class="menu-desc">
+          <p>
+            raw fish info raw fish info raw fish info raw fish raw fish info raw
+            fish raw fish info raw fish raw fish info raw fish raw fish info raw
+            fish raw fish info
+          </p>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
